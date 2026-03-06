@@ -1,0 +1,5 @@
+apiVersion: v2
+name: cyberintel-os
+description: Helm chart for CYBERINTEL OS
+version: 0.1.0
+appVersion: "0.1.0"
