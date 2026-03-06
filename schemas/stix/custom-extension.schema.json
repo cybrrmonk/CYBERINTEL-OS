@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CYBERINTEL OS STIX 2.1 Custom Extension",
+  "type": "object",
+  "properties": {
+    "x_intel_score": { "type": "number", "minimum": 0, "maximum": 100 },
+    "x_confidence_score": { "type": "number", "minimum": 0, "maximum": 100 },
+    "x_actor_risk": { "type": "number", "minimum": 0, "maximum": 100 },
+    "x_campaign_risk": { "type": "number", "minimum": 0, "maximum": 100 },
+    "x_malware_family": { "type": "string" },
+    "x_detection_coverage": { "type": "number", "minimum": 0, "maximum": 100 },
+    "x_attack_surface_risk": { "type": "number", "minimum": 0, "maximum": 100 }
+  },
+  "additionalProperties": true
+}
