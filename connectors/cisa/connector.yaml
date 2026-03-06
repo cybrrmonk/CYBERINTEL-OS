@@ -1,0 +1,8 @@
+name: cisa
+schedule: "*/15 * * * *"
+source_type: cisa
+output_topic: intel.raw.feed
+enabled: true
+retry:
+  max_attempts: 5
+  backoff_seconds: 30
