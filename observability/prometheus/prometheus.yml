@@ -1,0 +1,16 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: api-gateway
+    static_configs:
+      - targets: ['api-gateway:8080']
+  - job_name: ingestion
+    static_configs:
+      - targets: ['intel-ingestion-engine:8080']
+  - job_name: graph
+    static_configs:
+      - targets: ['intel-graph-engine:8080']
+  - job_name: stream
+    static_configs:
+      - targets: ['intel-stream-engine:8080']
